@@ -4,5 +4,8 @@
 <p>{{serverName}}</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
 <p>{{serverCreationStatus}}</p>
+<input type="text" class="form-control" (input)="onUpdateUserName($event)" />
+<p>{{userName}}</p>
+<button class="btn btn-primary" [disabled]="isUserNameEmpty">Click me</button>
 <app-server></app-server>
 <app-server></app-server>
